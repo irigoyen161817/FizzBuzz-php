@@ -1,0 +1,19 @@
+<?php
+
+namespace Deg540\CleanCodeKata9\Test;
+
+use Deg540\CleanCodeKata9\FizzBuzz;
+use PHPUnit\Framework\TestCase;
+use function PHPUnit\Framework\assertEquals;
+
+class FizzbuzzTest extends TestCase
+{
+    /**
+     * @test
+     */
+    public function getHelloWorld(){
+        $fizzBuzz = new FizzBuzz();
+        $fizzBuzzResult = $fizzBuzz->handle(1);
+        $this->assertEquals("Hello World!", $fizzBuzzResult);
+    }
+}

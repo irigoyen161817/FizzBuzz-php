@@ -53,8 +53,7 @@ docker build -t fizzbuzz-php .
 
 # Entrar al contenedor
 # Al entrar, si no existe vendor/, se instala automáticamente
-docker run -it -v "$(pwd)":/app fizzbuzz-php bash
-
+docker run -it -v "${PWD}:/app" fizzbuzz-php bash
 # Ejecutar los tests dentro del contenedor
 vendor/bin/phpunit
 ```
