@@ -7,7 +7,4 @@ class FizzBuzz
     public function handle($number): string{
         return "Hello World!";
     }
-    public function __construct()
-    {
-    }
 }
