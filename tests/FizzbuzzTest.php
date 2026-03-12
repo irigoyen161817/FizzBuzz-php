@@ -11,7 +11,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function givenOneNumberReturnsSameNumber(): void{
+    public function givenOneNumberNotSatisfyingFizzOrFuzzReturnsSameNumber(): void{
         $fizzBuzz = new FizzBuzz();
 
         $fizzBuzzResult = $fizzBuzz->handle(1);
@@ -22,32 +22,10 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function givenNumberIsThreeReturnsFizz(): void{
+    public function givenNumberDivisibleByThreeReturnsFizz(): void{
         $fizzBuzz = new FizzBuzz();
 
         $fizzBuzzResult = $fizzBuzz->handle(3);
-
-        $this->assertEquals("Fizz", $fizzBuzzResult);
-    }
-
-    /**
-     * @test
-     */
-    public function givenNumberIsSixReturnsFizz(): void{
-        $fizzBuzz = new FizzBuzz();
-
-        $fizzBuzzResult = $fizzBuzz->handle(6);
-
-        $this->assertEquals("Fizz", $fizzBuzzResult);
-    }
-
-    /**
-     * @test
-     */
-    public function givenNumberIsSNineReturnsFizz(): void{
-        $fizzBuzz = new FizzBuzz();
-
-        $fizzBuzzResult = $fizzBuzz->handle(9);
 
         $this->assertEquals("Fizz", $fizzBuzzResult);
     }
