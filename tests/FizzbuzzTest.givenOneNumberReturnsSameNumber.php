@@ -11,7 +11,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function getHelloWorld(){
+    public function givenOneNumberReturnsSameNumber(): void{
         $fizzBuzz = new FizzBuzz();
 
         $fizzBuzzResult = $fizzBuzz->handle("1");
