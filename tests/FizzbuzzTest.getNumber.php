@@ -14,8 +14,8 @@ class FizzBuzzTest extends TestCase
     public function getHelloWorld(){
         $fizzBuzz = new FizzBuzz();
 
-        $fizzBuzzResult = $fizzBuzz->handle(1);
-        
-        $this->assertEquals("Hello World!", $fizzBuzzResult);
+        $fizzBuzzResult = $fizzBuzz->handle("1");
+
+        $this->assertEquals("1", $fizzBuzzResult);
     }
 }
