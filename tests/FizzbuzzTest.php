@@ -33,21 +33,10 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function givenNumberIsFiveReturnsBuzz(): void{
+    public function givenNumberDivisibleByFiveReturnsBuzz(): void{
         $fizzBuzz = new FizzBuzz();
 
         $fizzBuzzResult = $fizzBuzz->handle(5);
-
-        $this->assertEquals("Buzz", $fizzBuzzResult);
-    }
-
-    /**
-     * @test
-     */
-    public function givenNumberIsTenReturnsBuzz(): void{
-        $fizzBuzz = new FizzBuzz();
-
-        $fizzBuzzResult = $fizzBuzz->handle(10);
 
         $this->assertEquals("Buzz", $fizzBuzzResult);
     }
